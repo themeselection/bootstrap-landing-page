@@ -569,100 +569,108 @@
             </div>
 
             <div class="row g-4">
-                <div class="col-lg-8 mx-auto">
-                    <div class="card border-0 shadow">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm">
                         <div class="card-body p-4">
-                            <form id="contactForm">
-                                <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <label for="firstName" class="form-label">First Name *</label>
-                                        <input type="text" class="form-control" id="firstName" required>
+                            <form class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="company" class="form-label">Company</label>
+                                    <input type="text" class="form-control" id="company">
+                                </div>
+                                <div class="col-12">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <select class="form-select" id="subject">
+                                        <option selected>General Inquiry</option>
+                                        <option>Sales Question</option>
+                                        <option>Technical Support</option>
+                                        <option>Partnership</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="4" placeholder="Tell us about your project or questions..."></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="newsletter">
+                                        <label class="form-check-label" for="newsletter">
+                                            Subscribe to our newsletter for AI insights and updates
+                                        </label>
                                     </div>
-                                    <div class="col-md-6">
-                                        <label for="lastName" class="form-label">Last Name *</label>
-                                        <input type="text" class="form-control" id="lastName" required>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="email" class="form-label">Email Address *</label>
-                                        <input type="email" class="form-control" id="email" required>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="company" class="form-label">Company</label>
-                                        <input type="text" class="form-control" id="company">
-                                    </div>
-                                    <div class="col-12">
-                                        <label for="subject" class="form-label">Subject *</label>
-                                        <select class="form-select" id="subject" required>
-                                            <option value="">Select a topic</option>
-                                            <option value="demo">Request a Demo</option>
-                                            <option value="pricing">Pricing Questions</option>
-                                            <option value="technical">Technical Support</option>
-                                            <option value="partnership">Partnership Opportunities</option>
-                                            <option value="other">Other</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-12">
-                                        <label for="message" class="form-label">Message *</label>
-                                        <textarea class="form-control" id="message" rows="5" placeholder="Tell us about your project and how we can help..." required></textarea>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="newsletter">
-                                            <label class="form-check-label" for="newsletter">
-                                                Subscribe to our newsletter for AI insights and product updates
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <button type="submit" class="btn btn-primary btn-lg w-100">
-                                            <i class="bi bi-send me-2"></i>Send Message
-                                        </button>
-                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg px-4">
+                                        <i class="bi bi-send me-2"></i>Send Message
+                                    </button>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="row mt-5">
-                <div class="col-lg-10 mx-auto">
-                    <div class="row g-4 text-center">
-                        <div class="col-md-4">
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="feature-icon bg-primary bg-gradient d-inline-flex align-items-center justify-content-center mb-3">
-                                    <i class="bi bi-geo-alt text-white fs-4"></i>
+                <div class="col-lg-4">
+                    <div class="contact-info">
+                        <div class="mb-4">
+                            <h5 class="fw-bold mb-3">Contact Information</h5>
+
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="contact-icon bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                    <i class="bi bi-geo-alt text-primary"></i>
                                 </div>
-                                <h6 class="fw-bold">Address</h6>
-                                <p class="text-muted mb-0">
-                                    123 Innovation Drive<br>
-                                    Tech Valley, CA 94301<br>
-                                    United States
-                                </p>
+                                <div>
+                                    <h6 class="mb-0">Address</h6>
+                                    <p class="text-muted mb-0">123 AI Street, Tech City, TC 12345</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="contact-icon bg-success bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                    <i class="bi bi-telephone text-success"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">Phone</h6>
+                                    <p class="text-muted mb-0">+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="contact-icon bg-info bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                    <i class="bi bi-envelope text-info"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">Email</h6>
+                                    <p class="text-muted mb-0">contact@aitoolkit.com</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="feature-icon bg-success bg-gradient d-inline-flex align-items-center justify-content-center mb-3">
-                                    <i class="bi bi-telephone text-white fs-4"></i>
-                                </div>
-                                <h6 class="fw-bold">Phone</h6>
-                                <p class="text-muted mb-0">
-                                    +1 (555) 123-4567<br>
-                                    <small>Mon-Fri 9AM-6PM PST</small>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="feature-icon bg-info bg-gradient d-inline-flex align-items-center justify-content-center mb-3">
-                                    <i class="bi bi-envelope text-white fs-4"></i>
-                                </div>
-                                <h6 class="fw-bold">Email</h6>
-                                <p class="text-muted mb-0">
-                                    info@aipowertool.com<br>
-                                    support@aipowertool.com
-                                </p>
+
+                        <div class="social-links">
+                            <h5 class="fw-bold mb-3">Follow Us</h5>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-youtube"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
